@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>Working With Forms</h1>
+    <form method="" action="">
+        <label for="firstname">First Name</label>
+        <input type="text" name="firstname"  size=""
+        maxlength="4"
+        minlength=""
+        required
+        style="width: 200px;
+        height: 25px;
+        border-radius: 10px;
+        border: none;
+        background-color:gray;
+        color: yellow;
+        padding-left: 30px;"
+        > <br>
+
+        <label for="password">Password</label>
+        <input type="password"> <br>
+
+        <input type="checkbox" name="newsletter" id="newsletter">
+        <label for="newsletter">Subscribe to our newsletter</label>
+
+        <br>
+
+        <label for="windows">Windows </label>
+        <input type="radio" name="windows"  id="windows">
+        <label for="linux">Linux </label>
+        <input type="radio" name="linux" id="linux">
+        <label for="mac">Mac </label>
+        <input type="radio"  name="mac" id="mac">
+        <br>
+
+        <label for="keyboard">Keyboard Type</label>
+        <select name="keyboard" id="keyboard">
+            <option value="1">Laptop Keyboard</option>
+            <option selected value="2">Full Keyboard</option>
+            <option value="3">Other Keyboard</option>
+            <option  value="4">Desktop Keyboard</option>
+        </select>
+
+        <br>
+
+        <label for="textarea">textarea </label>
+        <textarea name="textarea" id="" cols="30" rows="5"></textarea> <br>
+
+        <label for="file">file upload: </label>
+        <input type="file" name="file" id="">
+        <br>
+
+        <label for="date">date: </label>
+        <input type="date" name="date" id="date"> <br>
+
+        <label for="dateTime">datetime: </label>
+        <input type="DateTime-local" name="dateTime" id="dateTime"> <br>
+
+        <label for="month">month: </label>
+        <input type="month" name="month" id="">
+        <br>
+
+        <label for="color">color</label>
+        <input type="color" name="color" id="color">
+        <br>
+
+        <label for="range">Range: </label>
+        <input type="range" name="tel" id=""> <br>
+
+        <label for="email">Email: </label>
+        <input type="email" name="email" placeholder="Please enter your email">
+        <br>
+
+        <label for="tel">Telephone: </label>
+        <input type="tel" name="tel" placeholder="phone number" pattern="[0-9]{3}-[0-9]{3}-
+        [0-9]{4}">
+        <br>
+
+        <input type="submit" value="Submit">
+        
+    </form>
+
+</body>
+</html>

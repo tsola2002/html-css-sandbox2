@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working With Tables</title>
+</head>
+<body>
+    <h1>WORKING WITH TABLES</h1>
+
+    <table  cellpadding="10" cellspacing="30" style=" width:100%; border: 1px solid black; border-collapse: collapse; " >
+        <colgroup>
+            <col span="1" style="background-color: aqua">
+        </colgroup>
+        <tr valign="top">
+            <th rowspan="" valign="bottom" style="border: 1px solid black;">Name</th>
+            <th colspan="2" style="border: 1px solid black;">Age</th>
+            <th style="border: 1px solid black;">Address</th>
+        </tr>
+        <tr valign="bottom">
+            <td style="border: 1px solid black;">Shola</td>
+            <td style="border: 1px solid black;">12</td>
+            <td style="border: 1px solid black;">Lekki</td>
+        </tr>
+        <tr align="right">
+            <td style="border: 1px solid black;">Ola</td>
+            <td style="border: 1px solid black;">18</td>
+            <td style="border: 1px solid black;">Ajah</td>
+        </tr>
+    </table>
+
+
+    <h1>Nested Table</h1>
+    <table style="width:100; border: 1px solid black;" cellpadding"10" cellspacing="10">
+        <tr>
+            <th style="border: 1px solid black;">Name</th>
+            <th style="border: 1px solid black;">Age</th>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">
+                <table style="border: 1px solid red; width: 100%;">
+                    <tr>
+                        <td style="border: 1px solid purple;">Shola</td>
+                        <td style="border: 1px solid purple;">Ade</td>
+                    </tr>
+                </table>
+            </td>
+            <td style="border: 1px solid black;">12</td>
+        </tr>
+    </table>
+</body>
+</html>

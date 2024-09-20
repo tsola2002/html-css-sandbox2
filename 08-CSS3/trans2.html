@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body{
+            background-color: rgb(15,12,43);
+            color: white;
+        }
+        .circle{
+            width: 100px;
+            height: 100px;
+            border: 3px solid yellowgreen;
+            background-color: blue;
+            border-radius: 50px;
+            animation-name: shapeMovement;
+            animation-duration: 3000ms;
+            animation-timing-function:ease-in;
+            animation-delay: 2s;
+            animation-iteration-count: 3;
+            animation-direction: alternate-reverse;
+            animation-fill-mode: forwards;
+            animation-play-state: running;
+        }
+
+        @keyframes shapeMovement {
+            0% { border-radius: 0; background-color: yellow; }
+            25% { transform: translateX(200px); }
+            50% { transform: translate(200px, 200px);}
+            75% { transform: translate(0px, 200px);
+                border-radius: 30px; background-color: orange;} 
+            100% { border-radius: 50px; background-color: teal;}
+        }
+    </style>
+</head>
+<body>
+    <h1>css3 Animations</h1>
+    <div class="circle"></div>
+</body>
+</html>

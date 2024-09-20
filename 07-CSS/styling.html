@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Overview</title>
+</head>
+<style>
+    div {
+        color: red;
+        /* font-size: 12pt; */
+        font-size: 47px;
+        background-color: yellow;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-style: italic;
+        /* text-align: justify; */
+        /* text-combine-upright: vertical; */
+        /* writing-mode:vertical-lr ; */
+        text-orientation: upright;
+        text-indent: 200px;
+        text-align-last: right;
+        line-height: 86px;
+        word-spacing: 50px;
+        text-transform: capitalize;
+        text-decoration: underline;
+    }
+</style>
+<body>
+    <h1>Styling Overview</h1>
+
+    <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed voluptatum accusamus necessitatibus explicabo sequi omnis cum, magni animi fugit voluptatibus dolores amet fuga qui, dolorum porro quidem, fugiat culpa inventore.
+    </div>
+
+
+    <script>
+        let element = document.createElement("div");
+        let p = 0;
+
+        for(index in element.style){
+            p++;
+        }
+
+        console.log(p);
+    </script>
+</body>
+</html>

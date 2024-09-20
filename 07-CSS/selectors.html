@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /*  1 TAG SELECTOR */
+        h1{ color: red; }
+        /* 2. ID SELECTOR */
+        #nav { color: blueviolet;}
+        /* 3 CLASS SELECTOR */
+        .extra2 { color: yellowgreen;}
+        /* 4 GROUPING SELECTOR */
+        h1, h2, h3, h4, h5, h6 {
+            background-color: blue;
+        }
+        ul#nav { color: darkgreen;}
+        ol.extra2{ background-color: red;}
+        ul#nav, ol.extra2 { text-transform: uppercase;}
+        /* PSEUDO ELEMENT SELECTOR */
+        p::after { content: "Added New Paragraph";}
+        p::before { content: "We are starting here ";}
+        p::first-letter{ font-size: 200%;}
+        p::first-line { text-transform: uppercase;}
+        p::selection{ background-color: red; color: yellow; caret-color: blue;}
+        /* ::slotted(*) */
+
+        /* tr:first-child{
+            background-color: aqua;
+        } */
+
+        tr:nth-child(even){
+            /* background-color: rgb(255, 255, 0); */
+            /* background-color: rgb(50%, 50%, 50%); */
+            /* background-color: #ffff00; */
+            /* background-color: #888; */
+            /* background-color: hsl(75, 72, 2); */
+            /* background-color: rgba(255, 255, 0, 50%); */
+           
+        }
+        /* tr:last-child{
+            background-color: yellow;
+        } */
+
+        /* td:first-child{
+            background-color: blueviolet;
+        } */
+        /* td:nth-child(2){
+            background-color: brown;
+        } */
+
+        .nav-bar{
+            display: flex;
+        }
+        
+        .nav-bar li{
+            display: block;
+            margin-left: 8px;
+        }
+
+        .nav-bar li a{
+            text-decoration: none;
+        }
+        .nav-bar li a:hover{
+            font-weight: bold;
+            color: red;
+            text-decoration: underline;
+        }
+        /* .nav-bar li a:link{
+            font-weight: bold;
+            color: red;
+            text-decoration: underline;
+        } */
+        /* .nav-bar li a:visited{
+            font-weight: bold;
+            color: red;
+            text-decoration: underline;
+        }  */
+
+        /* input:focus{
+            border: 3px solid red;
+            outline: none;
+        } */
+        input:enabled{
+            border: 3px solid blueviolet;
+            outline: none;
+        }
+        input:disabled{
+            border: 3px solid grey;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav-bar">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Info</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+
+    <form action="" method="post">
+        <label for="">Name</label>
+        <input type="text" name="" id="" disabled> <br>
+        <label for="">Address</label>
+        <input type="text" name="" id="">
+    </form>
+
+    <br>
+    <table style="width:100; border: 1px solid black;" cellpadding"10" cellspacing="10">
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Age</th>
+            <th>Number</th>
+        </tr>
+        <tr>
+            <td>Ayo</td>
+            <td>Lekki</td>
+            <td>30</td>
+            <td>090945782346</td>
+        </tr>
+        <tr>
+            <td>Ayo</td>
+            <td>Lekki</td>
+            <td>30</td>
+            <td>090945782346</td>
+        </tr>
+        <tr>
+            <td>Ayo</td>
+            <td>Lekki</td>
+            <td>30</td>
+            <td>090945782346</td>
+        </tr>
+        <tr>
+            <td>Ayo</td>
+            <td>Lekki</td>
+            <td>30</td>
+            <td>090945782346</td>
+        </tr>
+        <tr>
+            <td>Ayo</td>
+            <td>Lekki</td>
+            <td>30</td>
+            <td>090945782346</td>
+        </tr>
+        <tr>
+            <td>Ayo</td>
+            <td>Lekki</td>
+            <td>30</td>
+            <td>090945782346</td>
+        </tr>
+    </table>
+
+    <!-- <template>
+        <div>
+            <slot name="animal"></slot>
+            <ul>
+                <li><slot name="kind">Cat</slot></li>
+                <li><slot name="name">Felix</slot></li>
+            </ul>
+        </div>
+    </template> -->
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt illum ea nostrum ab distinctio modi velit, aut, odit accusantium tempore dignissimos delectus, minus a neque debitis error vitae quas! Mollitia.</p>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium blanditiis minus enim obcaecati debitis quod dolor dolorum eaque delectus, nesciunt totam iure placeat ipsa impedit accusantium facilis vero voluptatum suscipit.</p>
+
+    <h1>working with selectors</h1>
+    <h2>working with selectors</h2>
+    <h3>working with selectors</h3>
+    <h4>working with selectors</h4>
+    <h5>working with selectors</h5>
+    <h6>working with selectors</h6>
+
+    <ul id="nav" class="extra">
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+    </ul>
+
+    <ol id="nav2" class="extra2">
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+    </ol>
+</body>
+</html>

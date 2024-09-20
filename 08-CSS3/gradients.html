@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients</title>
+    <style>
+        .rainbow{
+            margin-left: 30px;
+            width: 600px;
+            height: 600px;
+            /* background: linear-gradient(to bottom, yellow, red); */
+            /* background:linear-gradient(to bottom right, yellow, red); */
+            background: linear-gradient(yellow,blue, green, red);
+        }
+        .rainbow2{
+            margin-top: 40px;
+            margin-left: 30px;
+            width: 600px;
+            height: 600px;
+            /* background: radial-gradient(at left, red, blue); */
+            background: radial-gradient(at bottom left, red, blue);
+        }
+        .rainbow3{
+            margin-top: 40px;
+            margin-left: 30px;
+            width: 600px;
+            height: 600px;
+            /* background: radial-gradient(at left, red, blue); */
+            background: repeating-linear-gradient(red 100px, yellow 200px, red 300px);
+        }
+        .rainbow4{
+            margin-top: 40px;
+            margin-left: 30px;
+            width: 600px;
+            height: 600px;
+            /* background: radial-gradient(at left, red, blue); */
+            background: repeating-radial-gradient(red 100px, yellow 200px, red 300px);
+        }
+        .rainbow5{
+            margin-top: 40px;
+            margin-left: 30px;
+            width: 600px;
+            height: 600px;
+            /* background: radial-gradient(at left, red, blue); */
+            /* background: hsl(0, 100%, 50%); */
+            /* background: linear-gradient(
+                hsl(0, 100%, 50%),
+                hsl(50, 100%, 50%),
+                hsl(100, 100%, 50%),
+                hsl(150, 100%, 50%),
+                hsl(200, 100%, 50%),
+                hsl(250, 100%, 50%),
+                hsl(300, 100%, 50%)
+            ); */
+        }
+        .photo{
+            /* filter: blur(10px); */
+            /* filter: grayscale(100%); */
+            /* filter: sepia(100%); */
+            /* filter: hue-rotate(90deg); */
+            /* filter: brightness(50%); */
+            /* filter: opacity(10%); */
+        }
+    </style>
+</head>
+<body>
+    <h1>Working with Gradients</h1>
+    <div class="rainbow">
+    </div>
+    <div class="rainbow2">
+    </div>
+    <div class="rainbow3">
+    </div>
+    <div class="rainbow4">
+    </div>
+    <div class="rainbow5">
+        <img class="photo" src="./prof2.jpg" alt="">
+    </div>
+</body>
+</html>
