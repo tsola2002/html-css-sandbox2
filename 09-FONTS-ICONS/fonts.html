@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts</title>
+    <style>
+        /* .jacquarda-bastarda-9-regular {
+        font-family: "Jacquarda Bastarda 9", serif;
+        font-weight: 400;
+        font-style: normal;
+        } */
+
+        @font-face {
+            font-family: "shola";
+            src: local('shola'), url(./fonts/Allan-Regular.ttf);
+            font-style: normal;
+            font-weight: normal;
+        }
+
+        .fancy{
+            font-size: 22px;
+            font-family: shola;
+            /* font-family:Georgia, 'Times New Roman', Times, serif */
+        }
+
+        .social-media{
+            color: green;
+            font-size: 48px;
+        }
+    </style>
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/fontawesome.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap" rel="stylesheet"> -->
+</head>
+<body>
+    <h1 class="jacquarda-bastarda-9-regular">Working with Web Fonts</h1>
+
+    <div class="social-media">
+        <i class="fa-solid fa-user"></i>
+
+        <i class="fa-brands fa-instagram"></i>
+
+        <span class="fa-solid fa-user"></span>
+    </div>
+
+
+<!-- Or you can use a <span> element, with classes applied in the same way -->
+
+
+    <p class="fancy">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum consectetur veritatis sint nemo magnam incidunt et nisi excepturi harum sequi? Nulla atque aspernatur reprehenderit molestias laboriosam sint a consequuntur iste. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid perferendis sequi porro placeat tempore, nesciunt officia ad eaque omnis unde! Optio deleniti quibusdam illum alias illo quaerat molestiae voluptates itaque.
+    </p>
+
+    <p class="fancy">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum consectetur veritatis sint nemo magnam incidunt et nisi excepturi harum sequi? Nulla atque aspernatur reprehenderit molestias laboriosam sint a consequuntur iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus amet itaque recusandae animi ullam fuga necessitatibus libero cupiditate neque totam cum, hic sint quidem eveniet! Sit sed asperiores voluptas. Officia.
+    </p>
+</body>
+</html>
