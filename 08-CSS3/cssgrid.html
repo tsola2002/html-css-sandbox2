@@ -34,21 +34,59 @@
             margin-bottom: 30px;
         }
 
+        #grid3{
+            /* height: 1000px; */
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-columns: 500px 1fr 1fr 1fr 1fr;   
+            /* grid-template-rows: 50px 50px 50px 50px 50px; */
+            /* gap: 15px; */
+            /* width: 50%;
+            margin: 50px auto; */
+            /* grid-auto-rows: 100px; */
+            /* grid-auto-columns: 50px; */
+        }
+
+
+        #grid3 .item2{
+            /* grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3; */
+        }
+
+
         .box1{ 
             background-color: aqua;
             border: 2px dotted red;
         }
 
-        .tab{
-            width: 300px;
-            /* display: grid; */
+
+        table{
+            display: grid;
+            border-collapse: collapse;
+            width: 50%;
+            margin: 50px auto;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
-        /* .tab .item1{
-            background-color: aqua;
-            grid-column-start: 1;
-            grid-column-start: 3;
-        } */
+
+       table, td {
+            border: 2px solid black;
+       }
+
+       
+       td{
+        padding: 10px;
+       }
+
+       .item1{
+        /* grid-column-start: 1;
+        grid-column-end: 3; */
+        grid-row-start: 1;
+        grid-row-end: 1;
+       }
+        
 
     </style>
 </head>
@@ -72,19 +110,30 @@
         <div class="box1">4</div>
     </div>
 
-    <table class="tab" style="border: 2px solid black;">
-        <tr style="border: 2px solid black;" >
-            <td class="item1" style="border: 2px solid black;">1</td>
-            <td style="border: 2px solid black;">2</td>
+    <div id="grid3">
+        <div class="box1 item2">1</div>
+        <div class="box1">2</div>
+        <div class="box1">3</div>
+        <div class="box1">4</div>
+        <div class="box1">5</div>
+        <!-- <div class="box1">6</div> -->
+        <!-- <div class="box1">7</div>
+        <div class="box1">8</div> -->
+    </div>
+
+    <!-- <table class="tab">
+        <tr>
+            <td class="item1" >1</td>
+            <td>2</td>
         </tr>
         <tr>
-            <td style="border: 2px solid black;">3</td>
+            <td>3</td>
         </tr>
         <tr>
-            <td style="border: 2px solid black;">4</td>
-            <td style="border: 2px solid black;">5</td>
-            <td style="border: 2px solid black;">6</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
         </tr>
-    </table>
+    </table> -->
 </body>
 </html>

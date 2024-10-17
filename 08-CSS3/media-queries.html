@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+</head>
+<style>
+    .header{background-color: pink;}
+    .introwrapper{ background-color: aqua; height: 300px; width: 100%;}
+    .left{ background-color: blue; }
+    .moneyshot{ background-color: darkcyan;}
+    .moneyshot1{ background-color: gray;}
+    .moneyshot2{ background-color: rgb(50, 14, 136);}
+    .ingredients{ background-color: blueviolet;}
+    .howtomake {background-color: brown;}
+
+
+
+    /* styling for mobile screens */
+    @media screen and (min-width: 0px) and (max-width: 320px){
+
+        .introwrapper { 
+            background-color: yellow;
+        }
+    }
+    /*  styling for tablets */
+    @media screen and (min-width: 321px) and (max-width: 480px){
+
+        .introwrapper { 
+            background-color: red;
+        }
+    }
+
+     /*  styling for laptops */
+    @media screen and (min-width: 481px) and (max-width: 568px){
+
+        .introwrapper { 
+            background-color: green;
+         }
+    }
+
+     /*  styling for desktops */
+     @media screen and (min-width: 569px) and (max-width: 772px){
+
+        .introwrapper { 
+            background-color: orange;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    /*  styling for tv's and  */
+    @media screen and (min-width: 773px) {
+
+        .introwrapper { 
+            background-color: purple;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+</style>
+<body>
+    <div class="header">
+        <a href="">
+            <img src="./heart.png" alt="">
+            Hearts
+        </a>
+    </div>
+
+    <div class="introwrapper">
+        <h2 class="left">This is a classic website</h2>
+        <div class="moneyshot">
+            <p class="caption">
+                Incredible Scones
+            </p>
+        </div>
+        <div class="moneyshot1">
+            <p class="caption">
+                Incredible Scones
+            </p>
+        </div>
+        <div class="moneyshot2">
+            <p class="caption">
+                Incredible Scones
+            </p>
+        </div>
+    </div>
+    <p>Ingredients</p>
+    <div class="ingredients">
+        <h3 class="Subheader">Ingredients</h3>
+        <ul>
+            <li></li>
+        </ul>
+    </div>
+    <div class="howtomake">
+        <h3 class="Subheader">Method</h3>
+        <ol>
+            <li></li>
+        </ol>
+    </div>
+</body>
+</html>
